@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>register detailes</title>
+</head>
+<body>
+<h2> emp  your detailes below...!</h2>
+<div class="container" align="center">
+    <form method="post">
+        {{ fr.as_p}}
+        {% csrf_token n%}
+        <input type="submit" value="store data" class="btn btn-success">
+        <input type="reset" value="clear">
+    </form>
+</div>
+
+
+</body>
+</html>
